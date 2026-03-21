@@ -1,0 +1,145 @@
+.header_nav_contato {
+    text-decoration: underline;
+}
+
+.contato_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    height: 100%;
+}
+
+.contato_apresentacao_titulo {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--cor-texto);
+    font-family: var(--fonte-titulo);
+}
+
+.contato_apresentacao_nome, 
+.contato_apresentacao_email,
+.contato_apresentacao_tipo,
+.contato_apresentacao_pastel
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    justify-content: space-evenly;
+}
+
+form > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vh
+}
+
+label {
+    margin-bottom: 8px;
+    
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    background-color: var(--cor-inputs);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--cor-borda);
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+    background-color: #fff;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical; 
+}
+
+label, select, textarea {
+    font-size: 1rem;
+    color: var(--cor-texto);
+}
+
+label, textarea {
+    font-weight: 600;
+}
+
+.contato_apresentacao_pastel {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 15px;
+}
+
+.contato_apresentacao_pastel label {
+    margin-bottom: 0;
+}
+
+.contato_apresentacao_pastel_options {
+    display: flex;
+    gap: 10px
+}
+
+.contato_apresentacao_mensagem {
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.contato_apresentacao_botoes {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    width: 20%;
+}
+
+button[type="submit"] {
+    background-color: var(--cor-botao-primario);
+    color: var(--cor-texto);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+button[type="reset"] {
+    background-color: var(--cor-botao-secundario);
+    color: var(--cor-texto);
+}
+
+button[type="reset"]:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    button {
+        width: 40%;
+    }
+}
+

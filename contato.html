@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/basic.css">
+    <link rel="stylesheet" href="./styles/contato.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elusai da Silva Soares</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <div class="header_nav_sobre"> -->
+                <a href="index.html" class="header_nav_sobre">Sobre</a>
+            <!-- </div>
+            <div class="header_nav_experiencia"> -->
+                <a href="#experiencia" class="header_nav_experiencia">Experiência</a>                
+            <!-- </div>
+            <div class="header_nav_formacao"> -->
+                <a href="#formacao" class="header_nav_formacao">Formação</a>                
+            <!-- </div>
+            <div class="header_nav_projetos"> -->
+                <a href="#projetos" class="header_nav_projetos">Projetos</a>
+            <!-- </div>
+            <div class="header_nav_contato"> -->
+                <a href="contato.html" class="header_nav_contato">Contato</a>
+            <!-- </div> -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato">
+            <div class="contato_container">
+                <h1 class="contato_apresentacao_titulo">Que tal me dar um alô?</h1>
+                <form action="/cadastro" method="POST" id="formCadastro" class="contato_form">
+                    <div class="contato_form_first_row">
+                        <div class="contato_apresentacao_nome">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+    
+                        <div class="contato_apresentacao_email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="contato_form_second_row">
+                        <div class="contato_apresentacao_tipo">
+                            <label for="tipos">Você é:</label>
+                            <select name="tipos" id="tipos">
+                                <option value="pessoa">uma pessoa</option>
+                                <option value="gato">um gato</option>
+                                <option value="cachorro">um cachorro</option>
+                                <option value="robô">um robô</option>
+                            </select>
+                        </div>
+                        <div class="contato_apresentacao_pastel">
+                            <label for="pastel">Você gosta de pastel?</label>
+                            <div class="contato_apresentacao_pastel_options">
+                                <div class="contato_apresentacao_pastel_yes">
+                                    <input type="radio" name="pastel" value="true" id="pastel_yes">
+                                    <label for="pastel_yes">Sim</label>
+                                </div>
+                                <div class="contato_apresentacao_pastel_no">
+                                    <input type="radio" name="pastel" value="false" id="pastel_no">
+                                    <label for="pastel_no">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+
+
+                    <div class="contato_apresentacao_mensagem">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea type="text" id="mensagem" name="mensagem" required></textarea>                        
+                    </div>
+
+                    <div class="contato_apresentacao_botoes">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
