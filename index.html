@@ -9,55 +9,48 @@
 </head>
 <body>
     <header>
-        <nav>
-            <!-- <div class="header_nav_sobre"> -->
-                <a href="index.html" class="header_nav_sobre">Sobre</a>
-            <!-- </div>
-            <div class="header_nav_experiencia"> -->
-                <a href="#experiencia" class="header_nav_experiencia">Experiência</a>                
-            <!-- </div>
-            <div class="header_nav_formacao"> -->
-                <a href="#formacao" class="header_nav_formacao">Formação</a>                
-            <!-- </div>
-            <div class="header_nav_projetos"> -->
-                <a href="#projetos" class="header_nav_projetos">Projetos</a>
-            <!-- </div>
-            <div class="header_nav_contato"> -->
-                <a href="contato.html" class="header_nav_contato">Contato</a>
-            <!-- </div> -->
+        <nav class="header_nav_links">
+            <a href="index.html" class="header_nav_sobre">Sobre</a>
+            <a href="#experiencia" class="header_nav_experiencia">Experiência</a> 
+            <a href="#formacao" class="header_nav_formacao">Formação</a>  
+            <a href="#projetos" class="header_nav_projetos">Projetos</a>
+            <a href="contato.html" class="header_nav_contato">Contato</a>
+        </nav>
+        <nav class="header_nav_menu">
+            <a>
+                <img src="assets/menu.png" alt="Menu" class="header_nav_menu_icon">
+            </a>
         </nav>
     </header>
-
     <main>
         <section class="sobre">
             <div class="sobre_container">
-                <img class="sobre_imagem" src="./assets/gatinho.jpeg" alt="gatinho fofinho">
                 <div class="sobre_conteudo">
+                    <img class="sobre_imagem" src="./assets/david.jpeg" alt="gatinho fofinho">
                     <h1 class="sobre_apresentacao_titulo">Elusai Soares</h1>
                     <p class="sobre_apresentacao_subtitulo">Sou desenvolvedora back-end, mas aprenderia qualquer coisa para pagar as contas.</p>
-                    <div class="sobre_apresentacao_links">
-                        <div class="sobre_apresentacao_links_linkedin">
-                            <a href="https://www.linkedin.com/in/elusaisoares">
-                                <img src="./assets/linkedin-black.png" alt="LinkedIn" width="20" height="20">
-                                LinkedIn
-                            </a>
-                        </div>
-                        <div class="sobre_apresentacao_links_github">
-                            <a href="https://github.com/elusoares">
-                                <img src="./assets/github.png" alt="GitHub" width="20" height="20">
-                                GitHub
-                            </a>
-                        </div>
-                        <div class="sobre_apresentacao_links_contato">
-                            <a href="#contato">
-                                <img src="./assets/email.png" alt="Contato" width="20" height="20">
-                                Fale comigo
-                            </a>
-                        </div>
+                </div>
+                <div class="sobre_apresentacao_links">
+                    <div class="sobre_apresentacao_links_linkedin">
+                        <a href="https://www.linkedin.com/in/elusaisoares" class="link_linkedin">
+                            <img src="./assets/linkedin-black.png" alt="LinkedIn" width="20" height="20">
+                            <span for="linkedin">LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="sobre_apresentacao_links_github">
+                        <a href="https://github.com/elusoares" class="link_github">
+                            <img src="./assets/github.png" alt="GitHub" width="20" height="20">
+                            <span for="github">GitHub</span>
+                        </a>
+                    </div>
+                    <div class="sobre_apresentacao_links_contato">
+                        <a href="contato.html" class="link_contato">
+                            <img src="./assets/email.png" alt="Contato" width="20" height="20">
+                            <span for="contato">Fale comigo</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 </body>
-</html>
