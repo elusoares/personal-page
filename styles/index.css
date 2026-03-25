@@ -29,6 +29,7 @@
 .sobre_apresentacao_titulo {
     font-family: var(--fonte-titulo);
     font-size: clamp(1.3rem, 6vw, 4rem);
+    color: var(--cor-texto);
     margin-bottom: 10px;
     text-align: center;
 }
