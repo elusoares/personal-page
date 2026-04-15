@@ -1,55 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" tema="claro">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles/basic.css">
     <link rel="stylesheet" href="./styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elusai da Silva Soares</title>
 </head>
 <body>
-    <header>
-        <nav class="header_nav_links">
-            <a href="index.html" class="header_nav_sobre">Sobre</a>
-            <a href="experiencia.html" class="header_nav_experiencia">Experiência</a> 
-            <a href="formacao.html" class="header_nav_formacao">Formação</a>  
-            <a href="contato.html" class="header_nav_contato">Contato</a>
-        </nav>
-        <nav class="header_nav_menu">
-            <a>
-                <img src="assets/menu.png" alt="Menu" class="header_nav_menu_icon">
-            </a>
+    <header  id="inicio">
+        <nav>
+            <div class="nav_container">
+                <div class="nav_content_lg">
+                    <a href="#inicio" class="nav_link nav_inicio nav_link_selected">INÍCIO</a>
+                    <a href="#experiencia" class="nav_link nav_experiencia">EXPERIÊNCIA</a> 
+                    <a href="#formacao" class="nav_link nav_formacao">FORMAÇÃO</a>  
+                    <a href="#contato" class="nav_link nav_contato">CONTATO</a>
+                </div>
+                <div class="nav_content_sm">
+                    <a class="nav_menu_link">
+                        <img class="nav_icon menu" src="./assets/menu-claro.svg" alt="Menu">
+                        <img class="nav_icon close hide" src="./assets/close-claro.svg" alt="Menu">
+                    </a>
+                    <div class="dropdown_menu hide">
+                        <a href="#inicio" class="nav_link nav_inicio">INÍCIO</a>
+                        <a href="#experiencia" class="nav_link nav_experiencia">EXPERIÊNCIA</a>
+                        <a href="#formacao" class="nav_link nav_formacao">FORMAÇÃO</a>
+                        <a href="#contato" class="nav_link nav_contato">CONTATO</a>
+                    </div>
+                </div>
+                <div class="nav_contrast">
+                    <a class="nav_contrast_link">
+                        <img class="nav_icon contrast" src="./assets/contrast-claro.svg" alt="Menu">
+                    </a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="sobre">
-            <div class="sobre_container">
-                <div class="sobre_conteudo">
-                    <img class="sobre_imagem" src="./assets/david.jpeg" alt="gatinho fofinho">
-                    <h1 class="sobre_apresentacao_titulo">Elusai Soares</h1>
-                    <p class="sobre_apresentacao_subtitulo">Sou desenvolvedora back-end, mas aprenderia qualquer coisa para pagar as contas.</p>
+        <section id="inicio" class="inicio">
+            <div class="inicio_chat_box">
+                <div class="imagem_container inicio_imagem_container">
+                    <img class="imagem inicio_imagem" src="./assets/elu.png" alt="rosto da Elusai">
                 </div>
-                <div class="sobre_apresentacao_links">
-                    <div class="sobre_apresentacao_links_linkedin">
-                        <a href="https://www.linkedin.com/in/elusaisoares" class="link_linkedin">
+                <div class="inicio_texto">
+                    <p class="message first">Olá, meu nome é Elusai!</p>
+                    <p class="message second">Sou desenvolvedora Back-end.</p>
+                </div>
+            </div>
+        </section>
+        <section id="experiencia" class="secao experiencia">
+            <div class="secao_titulo experiencia_titulo">
+                <!-- <div class="imagem_container experiencia_imagem_container">
+                    <img class="imagem experiencia_imagem" src="./assets/elu.png" alt="rosto da Elusai">
+                </div> -->
+                <h1>Lugares em que trabalhei</h1>
+            </div>
+            <div class="secao_conteudo experiencia_conteudo">
+                <div class="conteudo_container experiencia_stone_container">
+                    <div class="cabecalho_conteiner experiencia_cabecalho_container">
+                        <div class="imagem_container stone_imagem_container">
+                            <img class="imagem stone_imagem" src="./assets/stone.jpeg" alt="rosto da Elusai">
+                        </div>
+                        <div class="titulo_container">
+                            <h2 class="titulo stone_titulo">Stone</h2>
+                            <h3 class="descricao stone_descricao">Desenvolvedora Back-end</h3>
+                            <h3 class="data stone_data">Agosto de 2022 - Presente</h3>
+                        </div>
+                    </div>
+                    <div class="texto_container">
+                        <p>Atuo como Desenvolvedora Backend no time de autocredenciamento do Ton (Stone), onde sou responsável pela sustentação e evolução técnica de serviços em Node.js que atendem uma base superior a 4 milhões de usuários ativos. Meu foco principal é garantir a estabilidade e a resiliência de fluxos críticos, como a aplicação de planos de taxas e a entrada de 2 milhões de novos usuários anuais, operando em uma arquitetura orientada a eventos no ecossistema AWS (Lambda, SQS, SNS, DynamoDB). Utilizo Terraform para evoluções incrementais de infraestrutura e Datadog aliado a consultas analíticas em SQL (Athena) para monitoramento proativo e resolução de incidentes em tempo real. Através de testes unitários com Jest e integrações robustas com APIs REST, asseguro a integridade financeira e a alta disponibilidade de um sistema de larga escala.</p>
+                    </div>
+                </div>
+                <div class="conteudo_container experiencia_elleven_container">
+                    <div class="cabecalho_conteiner experiencia_cabecalho_container">
+                        <div class="imagem_container elleven_imagem_container">
+                            <img class="imagem elleven_imagem" src="./assets/elleven.jpeg" alt="rosto da Elusai">
+                        </div>
+                        <div class="titulo_container">
+                            <h2 class="titulo elleven_titulo">Elleven</h2>
+                            <h3 class="descricao elleven_descricao">Desenvolvedora Fullstack</h3>
+                            <h3 class="data elleven_data">Outubro de 2021 - Julho de 2022</h3>
+                        </div>
+                    </div>
+                    <div class="texto_container">
+                        <p>Desenvolvi a implementação do Pix como um novo meio de pagamento para passagens de ônibus. Para isso, foi necessária a integração com os serviços de um banco por meio de uma nova API em Node.js, que orquestrou a comunicação entre a API de vendas (Laravel) e a API de Pix do banco. Também atuei nas alterações do front-end (Angular) para viabilizar a geração da passagem com o novo meio de pagamento. Na primeira versão da funcionalidade, o QR Code era disponibilizado ao cliente por meio de impressão.</p>
+                        <p>Atuei na solução de um problema crítico de negócio: agências em localidades rurais enfrentavam limitações para depositar a receita das vendas devido a restrições impostas pelos correspondentes bancários. Para contornar essa limitação, desenvolvi um sistema que permitia aos agentes quitarem os montantes devidos por meio de boletos bancários de menor valor. Essa aplicação consiste em uma API em Node.js que, assim como no sistema de Pix, conecta a API principal (Laravel) à API do banco e gera os boletos sob demanda, garantindo a conciliação dos pagamentos. Também implementei as alterações necessárias no front-end (Angular) para que os agentes pudessem gerenciar a geração dos boletos e acompanhar o status de cada pagamento em tempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="formacao" class="secao formacao">
+            <div class="secao_titulo formacao_titulo">
+                <!-- <div class="imagem_container formacao_imagem_container">
+                    <img class="imagem formacao_imagem" src="./assets/elu.png" alt="rosto da Elusai">
+                </div> -->
+                <h1>Minha formação acadêmica</h1>
+            </div>
+            <div class="secao_conteudo formacao_conteudo">
+                <div class="conteudo_container formacao_pos_graduacao_container">
+                    <div class="cabecalho_conteiner formacao_cabecalho_container">
+                        <div class="imagem_container pos_graduacao_imagem_container">
+                            <img class="imagem pos_graduacao_imagem" src="./assets/ifba.png" alt="rosto da Elusai">
+                        </div>
+                        <div class="titulo_container">
+                            <h2 class="titulo pos_graduacao_titulo">Pós Graduação Lato Sensu em Desenvolvimento Web</h2>
+                            <h3 class="data pos_graduacao_data">Março de 2026 - Presente</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteudo_container formacao_graduacao_container">
+                    <div class="cabecalho_conteiner formacao_cabecalho_container">
+                        <div class="imagem_container graduacao_imagem_container">
+                            <img class="imagem graduacao_imagem" src="./assets/ifba.png" alt="rosto da Elusai">
+                        </div>
+                        <div class="titulo_container">
+                            <h2 class="titulo graduacao_titulo">Bacharelado em Sistemas de Informação</h2>
+                            <h3 class="data graduacao_data">Concluído em 2025</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="secao contato">
+            <div class="secao_titulo contato_titulo">
+                <!-- <div class="imagem_container contato_imagem_container">
+                    <img class="imagem contato_imagem" src="./assets/elu.png" alt="rosto da Elusai">
+                </div> -->
+                <h1>Fale comigo</h1>
+            </div>
+            <div class="secao_conteudo contato_conteudo">
+                <div class="conteudo_container contato_form_container">
+                    <form action="/cadastro" method="POST" id="formCadastro" class="contato_form">
+                        <div class="contato_form_first_row">
+                            <div class="contato_apresentacao_nome">
+                                <div class="form_group">
+                                    <input type="text" id="nome" name="nome" placeholder=" " required>
+                                    <label for="nome">Nome</label>
+                                </div>
+                            </div>
+                            <div class="contato_apresentacao_email">
+                                <div class="form_group">
+                                    <input type="email" id="email" name="email" placeholder=" " required>
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                        </div>             
+                        <div class="contato_mensagem">
+                            <div class="form_group mensagem_form_group">
+                                <textarea id="mensagem" name="mensagem" placeholder=" " required></textarea>
+                                <label for="mensagem">Mensagem</label>
+                            </div>
+                        </div>
+                        <div class="contato_botao_photo">
+                            <button id="tirar_foto" type="button">
+                                <img src="./assets/photo_camera.svg" alt="" aria-hidden="true">
+                                Enviar foto
+                            </button>
+                        </div>
+                        <div class="contato_botoes">
+                            <button id="enviar" type="submit">Enviar</button>
+                            <button id="limpar" type="reset">Limpar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="conteudo_container contato_links_container"> 
+                    <div class="contato_links linkedin">
+                        <a href="https://www.linkedin.com/in/elusaisoares" class="link link_linkedin">
                             <img src="./assets/linkedin-black.png" alt="LinkedIn" width="20" height="20">
                             <span for="linkedin">LinkedIn</span>
                         </a>
                     </div>
-                    <div class="sobre_apresentacao_links_github">
-                        <a href="https://github.com/elusoares" class="link_github">
+                    <div class="contato_links github">
+                        <a href="https://github.com/elusoares" class="link link_github">
                             <img src="./assets/github.png" alt="GitHub" width="20" height="20">
                             <span for="github">GitHub</span>
                         </a>
                     </div>
-                    <div class="sobre_apresentacao_links_contato">
-                        <a href="contato.html" class="link_contato">
-                            <img src="./assets/email.png" alt="Contato" width="20" height="20">
-                            <span for="contato">Fale comigo</span>
+                    <div class="contato_links email">
+                        <a href="mailto:elusaisoares@gmail.com" class="link link_email">
+                            <img src="./assets/email.png" alt="Email" width="20" height="20">
+                            <span>Email</span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <p>Design based on TemplateMo.</p>
+    </footer>
+    <script src="./assets/main.js"></script>
 </body>
+</html>
